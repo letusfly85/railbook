@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
-#gem 'rails', '3.2.6'
+gem 'rails', '3.2.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'rails', :git => 'git://github.com/letusfly85/railbook.git'
+#gem 'rails', 
+#gem 'rails', '3.2.6',:git => 'git://github.com/letusfly85/railbook.git'
+
 
 # gem 'sqlite3'
 gem 'ruby-mysql'
