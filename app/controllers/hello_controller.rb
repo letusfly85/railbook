@@ -8,4 +8,8 @@ class HelloController < ApplicationController
     def view
         @msg = "メソッドテスト"
     end
+
+    def list
+        @books = Book.all
+    end
 end

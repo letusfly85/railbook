@@ -619,3 +619,168 @@ Migrating to CreateBooks (20120725145555)
   [1m[35m (13.0ms)[0m  CREATE TABLE `books` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `isbn` varchar(255), `title` varchar(255), `price` int(11), `publish` varchar(255), `published` date, `cd` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
   [1m[36m (4.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120725145555')[0m
   [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (17.7ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.4ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (4.7ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.3ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (4.6ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36mSQL (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (4.9ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:18:20', '2012-07-26 15:18:20')[0m
+Encoding::UndefinedConversionError: U+9006 from UTF-8 to ISO-8859-1: INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:18:20', '2012-07-26 15:18:20')
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (5.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:18:44', '2012-07-26 15:18:44')[0m
+Encoding::UndefinedConversionError: U+9006 from UTF-8 to ISO-8859-1: INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:18:44', '2012-07-26 15:18:44')
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (5.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.7ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:19:39', '2012-07-26 15:19:39')[0m
+Encoding::UndefinedConversionError: U+9006 from UTF-8 to ISO-8859-1: INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:19:39', '2012-07-26 15:19:39')
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (5.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:20:08', '2012-07-26 15:20:08')[0m
+Encoding::UndefinedConversionError: U+9006 from UTF-8 to ISO-8859-1: INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:20:08', '2012-07-26 15:20:08')
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (5.4ms)[0m  [1mSHOW VARIABLES LIKE 'character_set_database'[0m
+Connecting to database specified by database.yml
+  [1m[36m (5.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:39:02', '2012-07-26 15:39:02')[0m
+Encoding::UndefinedConversionError: U+9006 from UTF-8 to ISO-8859-1: INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5逆引き大全460の極意', 2730, '秀和システム', '2010-12-01', 0, '2012-07-26 15:39:02', '2012-07-26 15:39:02')
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (4.7ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (6.3ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (1, '978-4-7980-2812-5', 'MySQL5460', 2730, 'shuwasystems', '2010-12-01', 0, '2012-07-26 15:42:23', '2012-07-26 15:42:23')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (2, '978-4-7741-4466-5', 'JavaScript', 3129, 'sample_company', '2010-11-26', 0, '2012-07-26 15:42:23', '2012-07-26 15:42:23')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (3, '978-4-82229-425-0', 'Microsoft ASP.NET', 1995, 'BP', '2010-11-11', 1, '2012-07-26 15:42:23', '2012-07-26 15:42:23')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (4, '978-4-82229-423-6', 'Microsoft Visual C++ 2010', 1995, 'BP', '2010-09-06', 1, '2012-07-26 15:42:23', '2012-07-26 15:42:23')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (5, '978-4-7980-2695-4', 'Windows Azure', 3360, 'shuwasystems', '2010-07-29', 0, '2012-07-26 15:42:23', '2012-07-26 15:42:23')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (6, '978-4-8443-2879-7', '3PHP', 3360, 'kkk', '2010-06-18', 1, '2012-07-26 15:42:23', '2012-07-26 15:42:23')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (7, '978-4-7981-2205-2', 'Visual Studio 2010', 2079, 'sample_company', '2010-06-09', 0, '2012-07-26 15:42:23', '2012-07-26 15:42:23')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (8, '978-4-8443-2865-0', 'PerlCatalyst', 4410, 'sample_company', '2010-05-20', 0, '2012-07-26 15:42:23', '2012-07-26 15:42:23')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (9, '978-4-7981-2151-2', 'PHP 2', 3360, 'sample_company', '2010-04-12', 0, '2012-07-26 15:42:23', '2012-07-26 15:42:23')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `books` (`id`, `isbn`, `title`, `price`, `publish`, `published`, `cd`, `created_at`, `updated_at`) VALUES (10, '978-4-7741-4223-4', 'Apache', 2604, 'sample_company', '2010-04-10', 0, '2012-07-26 15:42:23', '2012-07-26 15:42:23')
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+
+
+Started GET "/hello/view" for 127.0.0.1 at 2012-07-27 00:42:48 +0900
+Connecting to database specified by database.yml
+Processing by HelloController#view as HTML
+  Rendered hello/view.html within layouts/application (8.7ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-27 00:42:49 +0900
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/hello.css?body=1" for 127.0.0.1 at 2012-07-27 00:42:49 +0900
+Served asset /hello.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-27 00:42:49 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/hello.js?body=1" for 127.0.0.1 at 2012-07-27 00:42:49 +0900
+Served asset /hello.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-27 00:42:49 +0900
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-27 00:42:49 +0900
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/hello/list" for 127.0.0.1 at 2012-07-27 00:50:19 +0900
+Processing by HelloController#list as HTML
+  [1m[36mBook Load (8.8ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+  Rendered hello/list.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 94ms (Views: 30.0ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/hello.css?body=1" for 127.0.0.1 at 2012-07-27 00:50:19 +0900
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-27 00:50:19 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:19 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:19 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:19 +0900
+Served asset /hello.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:19 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/hello/list" for 127.0.0.1 at 2012-07-27 00:50:49 +0900
+Processing by HelloController#list as HTML
+  [1m[35mBook Load (2.1ms)[0m  SELECT `books`.* FROM `books` 
+  Rendered hello/list.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 127.0.0.1 at 2012-07-27 00:50:49 +0900
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-27 00:50:49 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:49 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:49 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:49 +0900
+Served asset /hello.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-27 00:50:49 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
