@@ -7,7 +7,12 @@ Railbook::Application.routes.draw do
 
   resources :users
 
-  resources :books
+  resources :books do
+      collection do
+          get 'view'
+          get 'col_select'
+      end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

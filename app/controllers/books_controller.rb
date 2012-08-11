@@ -1,4 +1,13 @@
+# coding: utf-8
+
 class BooksController < ApplicationController
+  def col_select
+      @book  = Book.new(:publish => '技術評論社')
+      @books = Book.select('DISTINCT publish')
+
+      render 'books/col_select'
+  end
+
   # GET /books
   # GET /books.json
   def index
@@ -30,6 +39,7 @@ class BooksController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @book }
+      format.xml  { render xml: @book }
     end
   end
 
@@ -47,9 +57,11 @@ class BooksController < ApplicationController
       if @book.save
         format.html { redirect_to @book, notice: 'Book was successfully created.' }
         format.json { render json: @book, status: :created, location: @book }
+        format.xml  { render xml: @book , status: :created, location: @book }
       else
         format.html { render action: "new" }
         format.json { render json: @book.errors, status: :unprocessable_entity }
+        format.xml  { render xml: @book.errors , status: :unprocessable_entity }
       end
     end
   end
@@ -81,4 +93,9 @@ class BooksController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def view
+      @msg = 'hello!'
+  end
+
 end
